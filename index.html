@@ -1,0 +1,6 @@
+<!DOCTYPE html><html lang="id"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Toko Kelontong</title><style>body{font-family:Arial;background:#f4f4f4;padding:20px}.c{max-width:420px;margin:auto;background:#fff;padding:20px;border-radius:12px;text-align:center}select,button{width:100%;padding:10px;margin:10px 0}img{width:100%%}</style>
+<div class=c><h2>Toko Kelontong</h2><select id=p onchange=u()>
+<option value=1000>Panel 1GB - Rp1.000</option><option value=2000>Panel 2GB - Rp2.000</option><option value=3000>Panel 3GB - Rp3.000</option><option value=4000>Panel 4GB - Rp4.000</option><option value=5000>Panel 5GB - Rp5.000</option><option value=6000>Panel 6GB - Rp6.000</option><option value=7000>Panel 7GB - Rp7.000</option><option value=8000>Panel 8GB - Rp8.000</option><option value=9500>Panel 9GB - Rp9.500</option><option value=15000>Panel Unlimited - Rp15.000</option></select>
+<h3 id=h>Nominal: Rp1.000</h3><img src="qris.jpg"><button onclick=w()>Konfirmasi WhatsApp</button></div>
+<script>function r(v){return 'Rp'+Number(v).toLocaleString('id-ID')}function u(){h.innerHTML='Nominal: '+r(p.value)}function w(){let t=p.options[p.selectedIndex].text;open('https://wa.me/6285177109218?text='+encodeURIComponent('Halo Toko Kelontong, saya sudah membayar '+t+' sebesar '+r(p.value)+'. Mohon diproses.'))}</script>
